@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.5s;
+}
+#fullBg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('../img/toto-slot-resmi.jpg');
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+    
+}
+#fullBg .bgDark{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.91);
+    opacity: 1;
+    position: relative;
+    top: 0;
+    z-index: 2;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+#fullBg .bgDark .flexContent{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    color: white;
+}
+#fullBg .bgDark .flexContent .content{
+    width: 50%;
+
+}
+#fullBg .bgDark .flexContent .content .text{
+    margin-top: 20%;
+}
+#fullBg .bgDark .flexContent .content h1{
+    font-size: 45px;
+}
+#fullBg .bgDark .flexContent .content p{
+    font-size: 17px;
+    line-height: 25px;
+    margin: 25px 0;
+}   
+
+#fullBg .bgDark .flexContent .content img{
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 25px gold;
+    animation: boxShawdow 4s infinite;
+    margin-top: 10%;
+}
+#fullBg .bgDark .flexContent .content .button{
+    gap: 15px;
+    display: flex;
+}
+#fullBg .bgDark .flexContent .content .button a{
+    padding: 8px 20px;
+    background: #db3a00;
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid white;
+    border-radius: 8px;
+    /* font-weight: bold; */
+    color: white;
+}
+#fullBg .bgDark .flexContent .content .button a:hover{
+    background-color: white;
+    color: #db3a00;
+    border-color: #db3a00;
+}
+#fullBg .bgDark .flexContent .content .button a.register{
+    background-color: white;
+    border-color: #db3a00;
+    color: #db3a00;
+}
+#fullBg .bgDark .flexContent .content .button a.register:hover{
+    background-color: #db3a00;
+    color: white;
+    border-color: white;
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    z-index: 3;
+    color: white;
+    text-align: center;
+}
+
+@keyframes boxShawdow {
+    0% {
+       box-shadow: 2px 2px 25px #3498db;
+       border-color: gold;
+       margin-top: 9%;
+    }
+    25% {
+       box-shadow: 2px 2px 25px #e74c3c;
+       border-color: rgb(255, 123, 0);
+       margin-top: 10%;
+    }
+    50% {
+       box-shadow: 2px 2px 25px #f1c40f;
+       border-color: rgb(255, 8, 0);
+       margin-top: 10%;
+
+    }
+    75% {
+       box-shadow: 2px 2px 25px #2ecc71;
+       border-color: rgb(238, 255, 0);
+       margin-top: 9%;
+
+    }
+    100% {
+       box-shadow: 2px 2px 25px #3498db;
+       border-color: rgb(0, 101, 216);
+       margin-top: 9%;
+
+    }
+}
